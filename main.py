@@ -3,10 +3,14 @@ from fasthtml.common import *
 # FastHTML app initialization
 # (Reloading again for the footer styling)
 css = Style(open("static/styles.css").read())
-app, rt = fast_app(
+
+# Vercel requires a direct assignment to 'app'
+_app = fast_app(
     pico=False, # Disable pico to use our custom CSS entirely
     hdrs=(css,)
 )
+app = _app[0]
+rt = _app[1]
 
 @rt("/")
 def get():
