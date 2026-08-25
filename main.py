@@ -1,8 +1,13 @@
+import os
 from fasthtml.common import *
+
+# Ensure we use an absolute path so serverless functions can find the file
+current_dir = os.path.dirname(os.path.realpath(__file__))
+css_path = os.path.join(current_dir, "static", "styles.css")
 
 # FastHTML app initialization
 # (Reloading again for the footer styling)
-css = Style(open("static/styles.css").read())
+css = Style(open(css_path, encoding="utf-8").read())
 
 # Vercel requires a direct assignment to 'app'
 _app = fast_app(
