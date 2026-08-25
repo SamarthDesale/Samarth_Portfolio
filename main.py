@@ -12,7 +12,8 @@ css = Style(open(css_path, encoding="utf-8").read())
 # Vercel requires a direct assignment to 'app'
 _app = fast_app(
     pico=False, # Disable pico to use our custom CSS entirely
-    hdrs=(css,)
+    hdrs=(css,),
+    secret_key="my_portfolio_secret_key_12345" # Prevents FastHTML from writing .sesskey to read-only filesystem
 )
 app = _app[0]
 rt = _app[1]
