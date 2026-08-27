@@ -243,12 +243,6 @@ def get():
         H2("Training & Certifications"),
         Div(
             Div(
-                Span("Oct 2024", cls="timeline-date"),
-                H3("NPTEL Elite Certification: The Joy of Computing Using Python"),
-                P("IIT Madras"),
-                cls="timeline-item"
-            ),
-            Div(
                 Span("Jun 2026", cls="timeline-date"),
                 H3("Prime AI/ML Program"),
                 P("Apna College (Machine Learning & Agentic AI)"),
@@ -272,6 +266,24 @@ def get():
                 P("Deloitte"),
                 cls="timeline-item"
             ),
+            Div(
+                Span("Jun 2025", cls="timeline-date"),
+                H3("Programming Using Java"),
+                P("Infosys Springboard"),
+                cls="timeline-item"
+            ),
+            Div(
+                Span("Oct 2024", cls="timeline-date"),
+                H3("NPTEL Elite Certification: The Joy of Computing Using Python"),
+                P("IIT Madras"),
+                cls="timeline-item"
+            ),
+            Div(
+                Span("Completed", cls="timeline-date"),
+                H3("Data Visualisation Job Simulation"),
+                P("Tata Group"),
+                cls="timeline-item"
+            ),
             cls="timeline glass-card"
         ),
         cls="container"
@@ -282,14 +294,22 @@ def get():
         id="achievements",
         cls="container"
     )(
-        H2("Achievements"),
+        H2("Achievements & Workshops"),
         Div(
             Div(
+                Span("Apr 2026", cls="timeline-date"),
+                H3("Ministry of Education IDE Bootcamp"),
+                P("AICTE + Wadhwani Foundation: Completed a 5-day Design Thinking & Entrepreneurship bootcamp covering ideation, business modeling, and pitching."),
+                cls="timeline-item"
+            ),
+            Div(
+                Span("2025", cls="timeline-date"),
                 H3("MumbaiHacks 2025"),
                 P("Agentic AI Hackathon: Built 'PayAgent,' an AI financial agent with automated invoice parsing and PIN-verified transfers, in 24 hours."),
                 cls="timeline-item"
             ),
             Div(
+                Span("2025", cls="timeline-date"),
                 H3("Avishkar 2025"),
                 P("Institute Research Competition Presenter. Presented the ML-Based Plant Disease Detection System."),
                 cls="timeline-item"
