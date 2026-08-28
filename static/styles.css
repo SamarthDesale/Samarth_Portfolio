@@ -265,8 +265,30 @@ h1, h2, h3, h4 {
 /* Profile Image */
 .hero-image-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.resume-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-btn {
+  font-size: 0.9rem;
+  padding: 0.6rem 2rem;
+  background: transparent;
+  border: 1px solid var(--purple-accent);
+  color: var(--purple-accent);
+  box-shadow: 0 0 10px rgba(240, 163, 255, 0.1);
+}
+
+.resume-btn:hover {
+  background: var(--purple-accent);
+  color: #000;
+  box-shadow: 0 0 20px rgba(240, 163, 255, 0.4);
 }
 
 .img-container {

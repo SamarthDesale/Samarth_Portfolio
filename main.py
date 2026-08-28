@@ -90,6 +90,10 @@ def get():
                 Img(src="/static/profile.jpg?v=2", alt="Samarth Jitendra Desale", cls="profile-img"),
                 cls="img-container"
             ),
+            Div(
+                A("View Resume", href="https://drive.google.com/file/d/1MVXKE0hbh4Avj8WBZZU6LyqnruLzSkBp/view?usp=drive_link", target="_blank", cls="btn resume-btn"),
+                cls="resume-container"
+            ),
             cls="hero-image-wrapper"
         )
     )
