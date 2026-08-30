@@ -91,7 +91,7 @@ def get():
                 cls="img-container"
             ),
             Div(
-                A("View Resume", href="https://drive.google.com/file/d/1MVXKE0hbh4Avj8WBZZU6LyqnruLzSkBp/view?usp=drive_link", target="_blank", cls="btn resume-btn"),
+                A("View Resume", href="https://drive.google.com/file/d/10HDyhL1S02Hikuba7Fja8NuyfBmLZSUw/view?usp=drive_link", target="_blank", cls="btn resume-btn"),
                 cls="resume-container"
             ),
             cls="hero-image-wrapper"
